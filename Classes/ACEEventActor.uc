@@ -1,5 +1,5 @@
 // =============================================================================
-// AntiCheatEngine BETA 0.9d - (c) 2009-2011 AnthraX
+// AntiCheatEngine - (c) 2009-2016 AnthraX
 // =============================================================================
 class ACEEventActor extends IACEEventHandler
     config(System);
@@ -11,8 +11,8 @@ function PostBeginPlay()
 {
     ACEPadLog("","-","+",40,true);
     ACEPadLog("ACE EventHandler"," ","|",40,true);
-    ACEPadLog("BETA "$ACEVersion," ","|",40,true);
-    ACEPadLog("(c) 2009-2011 - AnthraX"," ","|",40,true);
+    ACEPadLog(ACEVersion," ","|",40,true);
+    ACEPadLog("(c) 2009-2016 - AnthraX"," ","|",40,true);
     ACEPadLog("","-","+",40,true);
     SetTimer(1.0, true);
 }
@@ -687,5 +687,5 @@ function PlayerHostileThread(IACECheck Check, string EventData)
 // =============================================================================
 defaultproperties
 {
-    ACEVersion="v09d"
+    ACEVersion="v10"
 }
