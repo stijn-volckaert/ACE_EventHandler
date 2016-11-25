@@ -687,5 +687,5 @@ function PlayerHostileThread(IACECheck Check, string EventData)
 // =============================================================================
 defaultproperties
 {
-    ACEVersion="v10c"
+    ACEVersion="@ACESHORTVERLOWER@"
 }
