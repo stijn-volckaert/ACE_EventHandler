@@ -165,14 +165,18 @@ function PlayerKicked(IACECheck Check, string EventData)
         Tmp = xxGetToken(EventData, ":::", 0);
         TokenCount = xxGetTokenCount(Tmp, "" $ chr(9));
 
+        PlayerLog(Check, "Player Kicked");
+
         for (i = 0; i < TokenCount; ++i)
         {
             Line = xxGetToken(Tmp, "" $ chr(9), i);
             if (Line != "")
+			{
                 Player.ClientMessage("[ACE" $ ACEVersion $ "]: " $ Line);
+				PlayerLog(Check, "Kick Message " $ i $ ": " $ Line);
+			}
         }
 
-        PlayerLog(Check, "Player Kicked");
         if (xxGetToken(EventData, ":::", 1) != "")
             PlayerLog(Check, "[KICKLOG] " $ xxGetToken(EventData, ":::", 1));
         else
