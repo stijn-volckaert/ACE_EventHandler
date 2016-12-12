@@ -91,7 +91,10 @@ function EventCatcher(name EventType, IACECheck Check, string EventData)
 // =============================================================================
 function PlayerLog(IACECheck Check, string LogString)
 {
-    ACELog("[" $ Check.PlayerName $ "]: " $ LogString);
+    if (ConfigActor != none)
+        ACELog("[" $ Check.PlayerName $ "]: " $ LogString, ConfigActor.bExternalLogJoins);
+    else
+        ACELog("[" $ Check.PlayerName $ "]: " $ LogString);
 }
 
 // =============================================================================
