@@ -1,5 +1,5 @@
 // =============================================================================
-// AntiCheatEngine - (c) 2009-2016 AnthraX
+// AntiCheatEngine - (c) 2009-2019 AnthraX
 // =============================================================================
 class ACEEventActor extends IACEEventHandler
     config(System);
@@ -12,7 +12,7 @@ function PostBeginPlay()
     ACEPadLog("","-","+",40,true);
     ACEPadLog("ACE EventHandler"," ","|",40,true);
     ACEPadLog(ACEVersion," ","|",40,true);
-    ACEPadLog("(c) 2009-2016 - AnthraX"," ","|",40,true);
+    ACEPadLog("(c) 2009-2019 - AnthraX"," ","|",40,true);
     ACEPadLog("","-","+",40,true);
     SetTimer(1.0, true);
 }
