@@ -135,6 +135,7 @@ function PlayerInitialized(IACECheck Check, string EventData)
 
     PlayerLog(Check, "[IP]"    @ Check.PlayerIP);
     PlayerLog(Check, "[OS]"    @ Check.OSString);
+	PlayerLog(Check, "[VER]"   @ Check.UTVersion);	
     if (Check.bWine)
     PlayerLog(Check, "[WINE]"  @ true);
     PlayerLog(Check, "[MAC1]"  @ Check.UTDCMacHash);
